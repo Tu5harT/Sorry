@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I'm Sorry</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to right, #ff9a9e, #fecfef);
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        .container {
+            text-align: center;
+            color: white;
+            animation: fadeIn 3s ease-in-out;
+        }
+
+        h1 {
+            font-size: 4em;
+            margin: 0;
+            animation: popUp 2s ease-in-out infinite alternate;
+        }
+
+        p {
+            font-size: 1.5em;
+            margin: 10px 0 30px;
+        }
+
+        .heart {
+            font-size: 5em;
+            animation: heartbeat 1.5s infinite;
+            cursor: pointer;
+        }
+
+        .btn {
+            background: #ff5e5b;
+            color: white;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            text-decoration: none;
+            border-radius: 30px;
+            transition: background 0.5s ease;
+            margin-top: 20px;
+        }
+
+        .btn:hover {
+            background: #ff8c8a;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes heartbeat {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.2);
+            }
+        }
+
+        @keyframes popUp {
+            from {
+                transform: translateY(-10px);
+            }
+            to {
+                transform: translateY(10px);
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>I'm Sorry ❤️</h1>
+    <p>I really really love YOU DOBUUU. PLEASE DOBUU JIIIII ❤️❤️❤️❤️❤️❤️❤️❤️.</p>
+    
+    <div class="heart" onclick="showMessage()">💖</div>
+    
+    <a href="#" class="btn" onclick="sendLove()">Click for a Surprise!</a>
+</div>
+
+<script>
+    function showMessage() {
+        alert("Sorry Ji wapas aisa nahi hoga 💕");
+    }
+
+    function sendLove() {
+        window.open("https://youtu.be/b3rNUhDqciM", "_blank");
+    }
+</script>
+
+</body>
+</html>
